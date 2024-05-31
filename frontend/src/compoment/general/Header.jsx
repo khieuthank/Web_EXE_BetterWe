@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <div>
-   
+     
         <header>
           {/* <!-- Header Start --> */}
           <div className='header-area header-transparent'>
