@@ -34,13 +34,14 @@ const Header = () => {
                           <li>
                             <Link to="/blog-detail">Blog Detail</Link>
                           </li>
-                          <li>
-                          <Link to="/pricing">Pricing</Link>
-                          </li>
+
                           <li>
                             <a href="elements.html">Elements</a>
                           </li>
                         </ul>
+                      </li>
+                      <li>
+                        <Link to="/pricing">Pricing</Link>
                       </li>
                       <li>
                         <a href="contact.html">Contact</a>
