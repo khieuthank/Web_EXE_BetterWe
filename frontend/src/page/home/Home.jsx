@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div>
       <div className="black-bg">
-      <Header></Header>
+    
         <main>
           {/* <!--? slider Area Start--> */}
           <div className="slider-area position-relative">

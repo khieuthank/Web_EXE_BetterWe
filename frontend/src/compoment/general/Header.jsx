@@ -21,6 +21,8 @@ const Header = () => {
                       <ul id='navigation'>                        
                         <li><Link to='/home'>Home</Link></li>                       
                         <li><Link to='/about'>About</Link></li>  
+                        <li><Link to='/pricing'>Pricing</Link></li>  
+                     
                     
                         <li><a href='blog.html'>Blog</a>
                           <ul className='submenu'>
