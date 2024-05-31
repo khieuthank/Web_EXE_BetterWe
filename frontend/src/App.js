@@ -9,6 +9,7 @@ import { Navigate } from "react-router-dom";
 import About from "./page/aboutme/About";
 import Blog from "./page/blog/Blog";
 import BlogDetail from "./page/blog/BlogDetail";
+import Contact from "./page/contact/Contact";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/blog" element={<Blog></Blog>}></Route>
           <Route path="/blog-detail" element={<BlogDetail></BlogDetail>}></Route>
-          <Route path="/pricing" element={<Pricing></Pricing>}></Route>
+          <Route path="/pricing" element={<Pricing></Pricing>}></Route>          
+          <Route path="/contact" element={<Contact></Contact>}></Route>
+          
         </Routes>
         <Footer></Footer>
       </BrowserRouter>
