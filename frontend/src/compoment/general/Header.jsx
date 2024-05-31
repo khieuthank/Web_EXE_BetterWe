@@ -31,7 +31,7 @@ const Header = () => {
                         <Link to="/blog">Blog</Link>
                         <ul className="submenu">
                           <li>
-                            <a href="blog.html">Blog</a>
+                            <Link to="/blog-detail">Blog Detail</Link>
                           </li>
                           <li>
                             <a href="blog_details.html">Blog Details</a>

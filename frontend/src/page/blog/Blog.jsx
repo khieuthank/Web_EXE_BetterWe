@@ -4,7 +4,7 @@ const Blog = () => {
   return (
     <div>
       <body>
-        <header>
+        {/* <header>
           <div class="header-area header-transparent">
             <div class="main-header header-sticky">
               <div class="container-fluid">
@@ -64,7 +64,7 @@ const Blog = () => {
               </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <main>
           <div class="slider-area2">
             <div class="slider-height2 d-flex align-items-center">
@@ -88,7 +88,7 @@ const Blog = () => {
                     <article class="blog_item">
                       <div class="blog_item_img">
                         <img class="card-img rounded-0" src="assets/img/blog/single_blog_1.png" alt="" />
-                        <a href="#" class="blog_item_date">
+                        <a href="#!" class="blog_item_date">
                           <h3>15</h3>
                           <p>Jan</p>
                         </a>
@@ -105,12 +105,12 @@ const Blog = () => {
                         </p>
                         <ul class="blog-info-link">
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-user"></i> Travel, Lifestyle
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-comments"></i> 03 Comments
                             </a>
                           </li>
@@ -120,7 +120,7 @@ const Blog = () => {
                     <article class="blog_item">
                       <div class="blog_item_img">
                         <img class="card-img rounded-0" src="assets/img/blog/single_blog_2.png" alt="" />
-                        <a href="#" class="blog_item_date">
+                        <a href="#!" class="blog_item_date">
                           <h3>15</h3>
                           <p>Jan</p>
                         </a>
@@ -137,12 +137,12 @@ const Blog = () => {
                         </p>
                         <ul class="blog-info-link">
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-user"></i> Travel, Lifestyle
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-comments"></i> 03 Comments
                             </a>
                           </li>
@@ -152,7 +152,7 @@ const Blog = () => {
                     <article class="blog_item">
                       <div class="blog_item_img">
                         <img class="card-img rounded-0" src="assets/img/blog/single_blog_3.png" alt="" />
-                        <a href="#" class="blog_item_date">
+                        <a href="#!" class="blog_item_date">
                           <h3>15</h3>
                           <p>Jan</p>
                         </a>
@@ -169,12 +169,12 @@ const Blog = () => {
                         </p>
                         <ul class="blog-info-link">
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-user"></i> Travel, Lifestyle
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-comments"></i> 03 Comments
                             </a>
                           </li>
@@ -184,7 +184,7 @@ const Blog = () => {
                     <article class="blog_item">
                       <div class="blog_item_img">
                         <img class="card-img rounded-0" src="assets/img/blog/single_blog_4.png" alt="" />
-                        <a href="#" class="blog_item_date">
+                        <a href="#!" class="blog_item_date">
                           <h3>15</h3>
                           <p>Jan</p>
                         </a>
@@ -201,12 +201,12 @@ const Blog = () => {
                         </p>
                         <ul class="blog-info-link">
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-user"></i> Travel, Lifestyle
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-comments"></i> 03 Comments
                             </a>
                           </li>
@@ -216,7 +216,7 @@ const Blog = () => {
                     <article class="blog_item">
                       <div class="blog_item_img">
                         <img class="card-img rounded-0" src="assets/img/blog/single_blog_5.png" alt="" />
-                        <a href="#" class="blog_item_date">
+                        <a href="#!" class="blog_item_date">
                           <h3>15</h3>
                           <p>Jan</p>
                         </a>
@@ -233,12 +233,12 @@ const Blog = () => {
                         </p>
                         <ul class="blog-info-link">
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-user"></i> Travel, Lifestyle
                             </a>
                           </li>
                           <li>
-                            <a href="#">
+                            <a href="#!">
                               <i class="fa fa-comments"></i> 03 Comments
                             </a>
                           </li>
@@ -248,22 +248,22 @@ const Blog = () => {
                     <nav class="blog-pagination justify-content-center d-flex">
                       <ul class="pagination">
                         <li class="page-item">
-                          <a href="#" class="page-link" aria-label="Previous">
+                          <a href="#!" class="page-link" aria-label="Previous">
                             <i class="ti-angle-left"></i>
                           </a>
                         </li>
                         <li class="page-item">
-                          <a href="#" class="page-link">
+                          <a href="#!" class="page-link">
                             1
                           </a>
                         </li>
                         <li class="page-item active">
-                          <a href="#" class="page-link">
+                          <a href="#!" class="page-link">
                             2
                           </a>
                         </li>
                         <li class="page-item">
-                          <a href="#" class="page-link" aria-label="Next">
+                          <a href="#!" class="page-link" aria-label="Next">
                             <i class="ti-angle-right"></i>
                           </a>
                         </li>
@@ -274,7 +274,7 @@ const Blog = () => {
                 <div class="col-lg-4">
                   <div class="blog_right_sidebar">
                     <aside class="single_sidebar_widget search_widget">
-                      <form action="#">
+                      <form action="#!">
                         <div class="form-group">
                           <div class="input-group mb-3">
                             <input
@@ -302,37 +302,37 @@ const Blog = () => {
                       </h4>
                       <ul class="list cat-list">
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Resaurant food</p>
                             <p>(37)</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Travel news</p>
                             <p>(10)</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Modern technology</p>
                             <p>(03)</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Product</p>
                             <p>(11)</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Inspiration</p>
                             <p>21</p>
                           </a>
                         </li>
                         <li>
-                          <a href="#" class="d-flex">
+                          <a href="#!" class="d-flex">
                             <p>Health Care (21)</p>
                             <p>09</p>
                           </a>
@@ -386,28 +386,28 @@ const Blog = () => {
                       </h4>
                       <ul class="list">
                         <li>
-                          <a href="#">project</a>
+                          <a href="#!">project</a>
                         </li>
                         <li>
-                          <a href="#">love</a>
+                          <a href="#!">love</a>
                         </li>
                         <li>
-                          <a href="#">technology</a>
+                          <a href="#!">technology</a>
                         </li>
                         <li>
-                          <a href="#">travel</a>
+                          <a href="#!">travel</a>
                         </li>
                         <li>
-                          <a href="#">restaurant</a>
+                          <a href="#!">restaurant</a>
                         </li>
                         <li>
-                          <a href="#">life style</a>
+                          <a href="#!">life style</a>
                         </li>
                         <li>
-                          <a href="#">design</a>
+                          <a href="#!">design</a>
                         </li>
                         <li>
-                          <a href="#">illustration</a>
+                          <a href="#!">illustration</a>
                         </li>
                       </ul>
                     </aside>
@@ -418,32 +418,32 @@ const Blog = () => {
                       </h4>
                       <ul class="instagram_row flex-wrap">
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_5.png" alt="" />
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_6.png" alt="" />
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_7.png" alt="" />
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_8.png" alt="" />
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_9.png" alt="" />
                           </a>
                         </li>
                         <li>
-                          <a href="#">
+                          <a href="#!">
                             <img class="img-fluid" src="assets/img/post/post_10.png" alt="" />
                           </a>
                         </li>
@@ -453,7 +453,7 @@ const Blog = () => {
                       <h4 class="widget_title" style={{ color: "#2d2d2d" }}>
                         Newsletter
                       </h4>
-                      <form action="#">
+                      <form action="#!">
                         <div class="form-group">
                           <input
                             type="email"
@@ -559,13 +559,13 @@ const Blog = () => {
                         </div>
                       </div>
                       <div class="footer-social mt-30 wow fadeInUp" data-wow-duration="3s" data-wow-delay=".8s">
-                        <a href="#">
+                        <a href="#!">
                           <i class="fab fa-twitter"></i>
                         </a>
                         <a href="https://bit.ly/sai4ull">
                           <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#">
+                        <a href="#!">
                           <i class="fab fa-pinterest-p"></i>
                         </a>
                       </div>
