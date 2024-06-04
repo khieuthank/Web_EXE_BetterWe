@@ -1,4 +1,5 @@
 import React from 'react'
+import Messenger from '../plugin/Messenger' 
 
 const Footer = () => {
   return (
@@ -65,9 +66,10 @@ const Footer = () => {
           {/* <!-- Footer End--> */}
         </footer>
         {/* <!-- Scroll Up --> */}
-        <div id="back-top" >
-          <a title="Go to Top" href="#"> <i className="fas fa-level-up-alt"></i></a>
+        <div  >
+         <Messenger></Messenger>
         </div>
+       
     </div>
   )
 }

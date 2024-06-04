@@ -1,0 +1,142 @@
+/* Messenger container */
+.messenger-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Messenger icon */
+.messenger-icon {
+  width: 60px;
+  height: 60px;
+  background-image: url('../../asset/messenger.png');
+  background-size: cover;
+  /* Thêm thuộc tính này */
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  /* Remove border */
+}
+
+
+/* messenger.css */
+
+.messenger-icon.hidden {
+  display: none;
+}
+
+/* messenger.css */
+.messsenger-popup-container {
+  height: 40vh;
+  width: 40vh;
+  background-color: white;
+}
+
+.messsenger-popup-content {
+  height: 100%;
+  width: 100%;
+}
+
+.messsenger-popup-header {
+  height: 80%;
+  text-align: center;
+}
+
+.messsenger-popup-footer {
+  height: 20%;
+  text-align: center;
+}
+
+.messsenger-popup-header a {
+  color: black;
+}
+
+.messsenger-popup-footer button {
+  width: 80%;
+  height: 80%;
+  background: #ff1313;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 20px;
+  color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px;
+  border: 2px solid #fff;
+  letter-spacing: 1px;
+  line-height: 0;
+  cursor: pointer;
+  transition: color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 0;
+}
+
+
+.messsenger-popup-header {
+  height: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+   padding: 10px; 
+}
+
+.messsenger-popup-header a {
+
+  background: #0084ff;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 27px 44px; 
+    color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px;
+  border: 2px solid #fff;
+  letter-spacing: 1px;
+  line-height: 0;
+  cursor: pointer;
+  transition: background-color 0.4s linear, color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px 0; 
+  text-decoration: none; 
+  text-align: center; 
+}
+
+.messsenger-popup-header a:hover {
+  background-color: #006bbf; 
+    color: #fff; 
+  }
+
+.messsenger-popup-header p {
+  background: #25d366; 
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  padding: 27px 44px;
+   color: #fff;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0px;
+  border: 2px solid #fff;
+  letter-spacing: 1px;
+  line-height: 0;
+  cursor: pointer;
+  transition: background-color 0.4s linear, color 0.4s linear;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  margin: 10px 0; 
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
