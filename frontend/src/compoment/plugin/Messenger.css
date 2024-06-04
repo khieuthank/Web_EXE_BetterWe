@@ -86,9 +86,12 @@
   background-color: #f5f5f5;
    padding: 10px; 
 }
+.messsenger-popup-header div{
+  width: 100%;
+}
 
 .messsenger-popup-header a {
-
+  width: 100%;
   background: #0084ff;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
@@ -117,6 +120,7 @@
   }
 
 .messsenger-popup-header p {
+  width: 100%;
   background: #25d366; 
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;

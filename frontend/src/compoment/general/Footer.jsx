@@ -67,6 +67,8 @@ const Footer = () => {
         </footer>
         {/* <!-- Scroll Up --> */}
         <div  >
+
+      
          <Messenger></Messenger>
         </div>
        
