@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <div>
+
       <header>
         {/* <!-- Header Start --> */}
         <div className="header-area header-transparent">
@@ -40,6 +41,9 @@ const Header = () => {
                         </ul>
                       </li>
                       <li>
+                        <Link to="/pricing">Pricing</Link>
+                      </li>
+                      <li>
                         <a href="contact.html">Contact</a>
                       </li>
                     </ul>
@@ -54,6 +58,7 @@ const Header = () => {
                 {/* <!-- Mobile Menu --> */}
                 <div className="col-12">
                   <div className="mobile_menu d-block d-lg-none"></div>
+
                 </div>
               </div>
             </div>
