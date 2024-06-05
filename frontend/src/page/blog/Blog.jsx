@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blog = () => {
   return (
@@ -94,11 +95,11 @@ const Blog = () => {
                         </a>
                       </div>
                       <div class="blog_details">
-                        <a class="d-inline-block" href="blog_details.html">
+                        <Link to="/blog/detail">
                           <h2 class="blog-head" style={{ color: "#2d2d2d" }}>
                             Google inks pact for new 35-storey office
                           </h2>
-                        </a>
+                        </Link>
                         <p>
                           That dominion stars lights dominion divide years for fourth have don't stars is that he earth
                           it first without heaven in place seed it second morning saying.
@@ -126,11 +127,11 @@ const Blog = () => {
                         </a>
                       </div>
                       <div class="blog_details">
-                        <a class="d-inline-block" href="blog_details.html">
+                        <Link to="/blog/detail">
                           <h2 class="blog-head" style={{ color: "#2d2d2d" }}>
                             Google inks pact for new 35-storey office
                           </h2>
-                        </a>
+                        </Link>
                         <p>
                           That dominion stars lights dominion divide years for fourth have don't stars is that he earth
                           it first without heaven in place seed it second morning saying.
@@ -158,11 +159,11 @@ const Blog = () => {
                         </a>
                       </div>
                       <div class="blog_details">
-                        <a class="d-inline-block" href="blog_details.html">
+                        <Link to="/blog/detail">
                           <h2 class="blog-head" style={{ color: "#2d2d2d" }}>
                             Google inks pact for new 35-storey office
                           </h2>
-                        </a>
+                        </Link>
                         <p>
                           That dominion stars lights dominion divide years for fourth have don't stars is that he earth
                           it first without heaven in place seed it second morning saying.
@@ -190,11 +191,11 @@ const Blog = () => {
                         </a>
                       </div>
                       <div class="blog_details">
-                        <a class="d-inline-block" href="blog_details.html">
+                        <Link to="/blog/detail">
                           <h2 class="blog-head" style={{ color: "#2d2d2d" }}>
                             Google inks pact for new 35-storey office
                           </h2>
-                        </a>
+                        </Link>
                         <p>
                           That dominion stars lights dominion divide years for fourth have don't stars is that he earth
                           it first without heaven in place seed it second morning saying.
@@ -222,11 +223,11 @@ const Blog = () => {
                         </a>
                       </div>
                       <div class="blog_details">
-                        <a class="d-inline-block" href="blog_details.html">
+                        <Link to="/blog/detail">
                           <h2 class="blog-head" style={{ color: "#2d2d2d" }}>
                             Google inks pact for new 35-storey office
                           </h2>
-                        </a>
+                        </Link>
                         <p>
                           That dominion stars lights dominion divide years for fourth have don't stars is that he earth
                           it first without heaven in place seed it second morning saying.
