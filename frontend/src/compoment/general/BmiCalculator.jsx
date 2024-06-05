@@ -81,9 +81,8 @@ const BmiCalculator = () => {
               </div>
               <div class="chart-calculate-form">
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-                  lacus vel facilisis.
+                  Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men
+                  and women.
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div class="row">
