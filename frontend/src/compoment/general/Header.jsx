@@ -26,6 +26,9 @@ const Header = () => {
                       <li>
                         <Link to="/about">About</Link>
                       </li>
+                      <li>
+                        <Link to="/bmi-calculator">BMI calculator</Link>
+                      </li>
 
                       <li>
                         <Link to="/blog">Blog</Link>
