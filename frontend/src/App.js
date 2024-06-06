@@ -9,6 +9,7 @@ import About from "./page/aboutme/About";
 import Blog from "./page/blog/Blog";
 import BlogDetail from "./page/blog/BlogDetail";
 import Contact from "./page/contact/Contact";
+import BmiCalculator from "./compoment/general/BmiCalculator";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="detail" element={<BlogDetail></BlogDetail>}></Route>
           </Route>
 
+          <Route path="/bmi-calculator" element={<BmiCalculator></BmiCalculator>}></Route>
           <Route path="/pricing" element={<Pricing></Pricing>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
         </Routes>
