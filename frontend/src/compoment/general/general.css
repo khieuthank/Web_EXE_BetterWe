@@ -1,0 +1,100 @@
+.language-switcher select {
+  border: 1px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: rgba(221, 34, 34, 0.1);
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
+}
+
+.language-switcher select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.language-switcher select option {
+  background-color: #fff;
+  color: #333;
+}
+
+.language-switcher select option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-switcher select::-ms-expand {
+  display: none;
+}
+
+  .mobile_menu {
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
+}
+
+.mobile_menu.show {
+    display: block; 
+}
+
+.mobile_menu nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.mobile_menu nav ul li {
+    list-style: none;
+}
+
+.mobile_menu nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333; 
+    text-decoration: none;
+    transition: background-color 0.3s ease; 
+}
+
+.mobile_menu nav ul li a:hover {
+    background-color: #ec3f3f; 
+}
+
+.mobile_menu .submenu {
+    display: none;
+    background-color: #fff; 
+}
+
+.mobile_menu .submenu.show {
+    display: block; 
+}
+
+.mobile_menu .submenu li {
+    padding: 10px 0;
+}
+
+.mobile_menu .submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333;
+    transition: background-color 0.3s ease; 
+}
+
+.mobile_menu .submenu li a:hover {
+    background-color: #f4f4f4; 
+}
+.mobile-menu-icon {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #dd2222;
+  color: #ffffff;
+}
+
+.mobile-menu-icon i {
+  font-size: 18px; 
+}

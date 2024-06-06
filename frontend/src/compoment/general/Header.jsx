@@ -1,74 +1,131 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import './general.css'
 
 const Header = () => {
-  return (
-    <div>
-      <header>
-        {/* <!-- Header Start --> */}
-        <div className="header-area header-transparent">
-          <div className="main-header header-sticky">
-            <div className="container-fluid">
-              <div className="menu-wrapper d-flex align-items-center justify-content-between">
-                {/* <!-- Logo --> */}
-                <div className="logo">
-                  <a href="index.html">
-                    <img src="assets/img/logo/logo.png" alt="" />
-                  </a>
-                </div>
-                {/* <!-- Main-menu --> */}
-                <div className="main-menu f-right d-none d-lg-block">
-                  <nav>
-                    <ul id="navigation">
-                      <li>
-                        <Link to="/home">Home</Link>
-                      </li>
-                      <li>
-                        <Link to="/about">About</Link>
-                      </li>
-                      <li>
-                        <Link to="/bmi-calculator">BMI calculator</Link>
-                      </li>
+    const { t, i18n } = useTranslation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                      <li>
-                        <Link to="/blog">Blog</Link>
-                        <ul className="submenu">
-                          <li>
-                            <Link to="/blog/detail">Blog Detail</Link>
-                          </li>
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    }
 
-                          <li>
-                            <a href="elements.html">Elements</a>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>
-                        <Link to="/pricing">Pricing</Link>
-                      </li>
-                      <li>
-                        <a href="contact.html">Contact</a>
-                      </li>
-                    </ul>
-                  </nav>
+    const toggleMenu = () => {
+        setIsMenuOpen(prevState => !prevState);
+    }
+
+    const closeMenu = () => {
+        setIsMenuOpen(false); 
+    }
+
+    return (
+        <div>
+            <header>
+                {/* Header Start */}
+                <div className="header-area header-transparent">
+                    <div className="main-header header-sticky">
+                        <div className="container-fluid">
+                            <div className="menu-wrapper d-flex align-items-center justify-content-between">
+                                {/* Logo */}
+                                <div className="logo">
+                                    <Link to="/home">
+                                        <img src="assets/img/logo/logo.png" alt="logo" />
+                                    </Link>
+                                </div>
+                                {/* Main-menu */}
+                                <div className={`main-menu f-right d-none d-lg-block ${isMenuOpen ? 'show' : ''}`}>
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li>
+                                                <Link to="/home" onClick={closeMenu}>{t('header.home')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/about" onClick={closeMenu}>{t('header.about')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/bmi-calculator" onClick={closeMenu}>{t('header.BMI calculator')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/blog" onClick={closeMenu}>Blog</Link>
+                                                <ul className="submenu">
+                                                    <li>
+                                                        <Link to="/blog/detail" onClick={closeMenu}>Blog Detail</Link>
+                                                    </li>
+                                                    <li>
+                                                        <a href="elements.html" onClick={closeMenu}>Elements</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <Link to="/pricing" onClick={closeMenu}>{t('header.pricing')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/contact" onClick={closeMenu}>{t('header.contact')}</Link>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <div className="d-flex">
+                                    {/* Language Switcher */}
+                                    <div className="language-switcher">
+                                        <select onChange={(e) => changeLanguage(e.target.value)}>
+                                            <option value="en">EN</option>
+                                            <option value="vn">VN</option>
+                                        </select>
+                                    </div>
+
+
+                                    {/* Mobile Menu */}
+                                    <div className="d-lg-none">
+                                        <div className="mobile-menu-icon" onClick={toggleMenu}>
+                                            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                                        </div>
+                                        <div className={`mobile_menu ${isMenuOpen ? 'show' : ''}`}>
+                                            <nav>
+                                                <ul id="navigation">
+                                                    <li>
+                                                        <Link to="/home" onClick={closeMenu}>{t('header.home')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/about" onClick={closeMenu}>{t('header.about')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/bmi-calculator" onClick={closeMenu}>{t('header.BMI calculator')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/blog" onClick={closeMenu}>Blog</Link>
+                                                        <ul className="submenu">
+                                                            <li>
+                                                                <Link to="/blog/detail" onClick={closeMenu}>Blog Detail</Link>
+                                                            </li>
+                                                            <li>
+                                                                <a href="elements.html" onClick={closeMenu}>Elements</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/pricing" onClick={closeMenu}>{t('header.pricing')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/contact" onClick={closeMenu}>{t('header.contact')}</Link>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {/* <!-- Header-btn --> */}
-                <div className="header-btns d-none d-lg-block f-right">
-                  <a href="contact.html" className="btn">
-                    Contact me
-                  </a>
-                </div>
-                {/* <!-- Mobile Menu --> */}
-                <div className="col-12">
-                  <div className="mobile_menu d-block d-lg-none"></div>
-                </div>
-              </div>
-            </div>
-          </div>
+                {/* Header End */}
+            </header>
         </div>
-        {/* <!-- Header End --> */}
-      </header>
-    </div>
-  );
+    );
 };
 
 export default Header;
