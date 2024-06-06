@@ -30,7 +30,7 @@ const Header = () => {
                                 {/* Logo */}
                                 <div className="logo">
                                     <Link to="/home">
-                                        <img src="assets/img/logo/logo.png" alt="logo" />
+                                        <img className="logo-img" src="assets/img/logo/logo.jpg" alt="logo" />
                                     </Link>
                                 </div>
                                 {/* Main-menu */}
