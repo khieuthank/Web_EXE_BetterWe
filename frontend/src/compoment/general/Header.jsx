@@ -1,83 +1,128 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import './general.css'
 
 const Header = () => {
     const { t, i18n } = useTranslation();
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const changeLanguage = (lng) => {
         i18n.changeLanguage(lng);
     }
 
+    const toggleMenu = () => {
+        setIsMenuOpen(prevState => !prevState);
+    }
+
+    const closeMenu = () => {
+        setIsMenuOpen(false); // Đóng menu khi một mục được chọn
+    }
+
     return (
         <div>
             <header>
-                {/* <!-- Header Start --> */}
+                {/* Header Start */}
                 <div className="header-area header-transparent">
                     <div className="main-header header-sticky">
                         <div className="container-fluid">
                             <div className="menu-wrapper d-flex align-items-center justify-content-between">
-                                {/* <!-- Logo --> */}
+                                {/* Logo */}
                                 <div className="logo">
-                                    <a href="index.html">
+                                    <Link to="/home">
                                         <img src="assets/img/logo/logo.png" alt="logo" />
-                                    </a>
+                                    </Link>
                                 </div>
-                                {/* <!-- Main-menu --> */}
-                                <div className="main-menu f-right d-none d-lg-block">
+                                {/* Main-menu */}
+                                <div className={`main-menu f-right d-none d-lg-block ${isMenuOpen ? 'show' : ''}`}>
                                     <nav>
                                         <ul id="navigation">
                                             <li>
-                                                <Link to="/home">{t('header.home')}</Link>
+                                                <Link to="/home" onClick={closeMenu}>{t('header.home')}</Link>
                                             </li>
                                             <li>
-                                                <Link to="/about">{t('header.about')}</Link>
+                                                <Link to="/about" onClick={closeMenu}>{t('header.about')}</Link>
                                             </li>
                                             <li>
-                                                <Link to="/bmi-calculator">{t('header.BMI calculator')}</Link>
+                                                <Link to="/bmi-calculator" onClick={closeMenu}>{t('header.BMI calculator')}</Link>
                                             </li>
                                             <li>
-                                                <Link to="/blog">Blog</Link>
+                                                <Link to="/blog" onClick={closeMenu}>Blog</Link>
                                                 <ul className="submenu">
                                                     <li>
-                                                        <Link to="/blog/detail">Blog Detail</Link>
+                                                        <Link to="/blog/detail" onClick={closeMenu}>Blog Detail</Link>
                                                     </li>
                                                     <li>
-                                                        <a href="elements.html">Elements</a>
+                                                        <a href="elements.html" onClick={closeMenu}>Elements</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
-                                                <Link to="/pricing">{t('header.pricing')}</Link>
+                                                <Link to="/pricing" onClick={closeMenu}>{t('header.pricing')}</Link>
                                             </li>
                                             <li>
-                                                <a href="contact.html">{t('header.contact')}</a>
+                                                <Link to="/contact" onClick={closeMenu}>{t('header.contact')}</Link>
                                             </li>
                                         </ul>
                                     </nav>
                                 </div>
-                                {/* <!-- Language Switcher --> */}
-                                <div className="language-switcher">
-                                    <button onClick={() => changeLanguage('en')}>EN</button>
-                                    <button onClick={() => changeLanguage('vn')}>VN</button>
-                                </div>
-                                {/* <!-- Header-btn --> */}
-                                <div className="header-btns d-none d-lg-block f-right">
-                                    <a href="contact.html" className="btn">
-                                        {t('header.contact')}
-                                    </a>
+                                <div>
+                                    {/* Language Switcher */}
+                                    <div className="language-switcher">
+                                        <select onChange={(e) => changeLanguage(e.target.value)}>
+                                            <option value="en">EN</option>
+                                            <option value="vn">VN</option>
+                                        </select>
+                                    </div>
+
+
+                                    {/* Mobile Menu */}
+                                    <div className="d-lg-none">
+                                        <div className="mobile-menu-icon" onClick={toggleMenu}>
+                                            <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
+                                        </div>
+                                        <div className={`mobile_menu ${isMenuOpen ? 'show' : ''}`}>
+                                            <nav>
+                                                <ul id="navigation">
+                                                    <li>
+                                                        <Link to="/home" onClick={closeMenu}>{t('header.home')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/about" onClick={closeMenu}>{t('header.about')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/bmi-calculator" onClick={closeMenu}>{t('header.BMI calculator')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/blog" onClick={closeMenu}>Blog</Link>
+                                                        <ul className="submenu">
+                                                            <li>
+                                                                <Link to="/blog/detail" onClick={closeMenu}>Blog Detail</Link>
+                                                            </li>
+                                                            <li>
+                                                                <a href="elements.html" onClick={closeMenu}>Elements</a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/pricing" onClick={closeMenu}>{t('header.pricing')}</Link>
+                                                    </li>
+                                                    <li>
+                                                        <Link to="/contact" onClick={closeMenu}>{t('header.contact')}</Link>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
                                 </div>
 
-                                {/* <!-- Mobile Menu --> */}
-                                <div className="col-12">
-                                    <div className="mobile_menu d-block d-lg-none"></div>
-                                </div>
+
+
                             </div>
                         </div>
                     </div>
                 </div>
-                {/* <!-- Header End --> */}
+                {/* Header End */}
             </header>
         </div>
     );

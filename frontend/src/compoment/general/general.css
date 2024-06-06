@@ -1,25 +1,100 @@
-.language-switcher {
-    display: flex;
-    justify-content: flex-end; /* Đẩy các nút về phía bên phải */
-    gap: 10px; /* Khoảng cách giữa các nút */
-    margin-right: 20px; /* Khoảng cách từ các nút đến biên phải */
-    align-items: center; /* Canh giữa các nút theo chiều dọc */
+.language-switcher select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: 1px solid #ccc;
+    padding: 8px 12px;
+    border-radius: 4px;
+    background-color: #dd2222;
+    color: #ffffff;
+    cursor: pointer;
+  }
+  
+  .language-switcher select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .language-switcher select option {
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .language-switcher select option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .language-switcher select::-ms-expand {
+    display: none;
+  }
+  .mobile_menu {
+    display: none; /* Ban đầu ẩn menu */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Màu nền */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    z-index: 999; /* Đảm bảo menu hiển thị phía trên */
 }
 
-.language-switcher button {
-    background-color: #e91515; /* Màu nền của nút */
-    border: 1px solid #ccc; /* Viền nút */
-    border-radius: 5px; /* Bo góc nút */
-    padding: 5px 10px; /* Khoảng cách bên trong nút */
-    cursor: pointer; /* Con trỏ chuột khi di chuyển vào nút */
-    transition: background-color 0.3s ease; /* Hiệu ứng khi thay đổi màu nền */
+.mobile_menu.show {
+    display: block; /* Hiển thị menu khi 'isMenuOpen' là true */
 }
 
-.language-switcher button:hover {
-    background-color: #e0e0e0; /* Màu nền khi di chuột vào nút */
+.mobile_menu nav ul {
+    padding: 0;
+    margin: 0;
 }
 
-.language-switcher button:focus {
-    outline: none; /* Xóa viền khi nút được chọn */
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi nút được chọn */
+.mobile_menu nav ul li {
+    list-style: none;
+}
+
+.mobile_menu nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: #333; /* Màu chữ */
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.mobile_menu nav ul li a:hover {
+    background-color: #f4f4f4; /* Màu nền khi di chuột qua */
+}
+
+.mobile_menu .submenu {
+    display: none; /* Ẩn submenu ban đầu */
+    background-color: #fff; /* Màu nền cho submenu */
+}
+
+.mobile_menu .submenu.show {
+    display: block; /* Hiển thị submenu khi hover */
+}
+
+.mobile_menu .submenu li {
+    padding: 10px 0;
+}
+
+.mobile_menu .submenu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #333; /* Màu chữ cho submenu */
+    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+}
+
+.mobile_menu .submenu li a:hover {
+    background-color: #f4f4f4; /* Màu nền khi di chuột qua submenu */
+}
+.mobile-menu-icon {
+  cursor: pointer;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #dd2222;
+  color: #ffffff;
+}
+
+.mobile-menu-icon i {
+  font-size: 18px; /* Điều chỉnh kích thước của biểu tượng */
 }
