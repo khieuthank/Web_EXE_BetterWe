@@ -1,32 +1,32 @@
 .language-switcher select {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    border-radius: 4px;
-    background-color: #dd2222;
-    color: #ffffff;
-    cursor: pointer;
-  }
-  
-  .language-switcher select:focus {
-    outline: none;
-    border-color: #007bff;
-  }
-  
-  .language-switcher select option {
-    background-color: #fff;
-    color: #333;
-  }
-  
-  .language-switcher select option:hover {
-    background-color: #f0f0f0;
-  }
-  
-  .language-switcher select::-ms-expand {
-    display: none;
-  }
+  border: 1px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: rgba(221, 34, 34, 0.1); /* Màu đỏ với độ trong suốt 80% */
+  color: #ffffff;
+  cursor: pointer;
+  font-family: Arial, sans-serif; /* Chọn font-family bạn muốn */
+  font-size: 14px; /* Chọn font-size bạn muốn */
+}
+
+.language-switcher select:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.language-switcher select option {
+  background-color: #fff;
+  color: #333;
+}
+
+.language-switcher select option:hover {
+  background-color: #f0f0f0;
+}
+
+.language-switcher select::-ms-expand {
+  display: none;
+}
+
   .mobile_menu {
     display: none; /* Ban đầu ẩn menu */
     position: absolute;

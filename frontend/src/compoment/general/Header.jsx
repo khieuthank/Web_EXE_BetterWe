@@ -66,7 +66,7 @@ const Header = () => {
                                         </ul>
                                     </nav>
                                 </div>
-                                <div>
+                                <div className="d-flex">
                                     {/* Language Switcher */}
                                     <div className="language-switcher">
                                         <select onChange={(e) => changeLanguage(e.target.value)}>
