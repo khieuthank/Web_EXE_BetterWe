@@ -4,6 +4,9 @@ import EN_HOME from "../en/home.json";
 import VN_HOME from "../vn/home.json";
 import EN_PRICING from '../en/pricing.json';
 import VN_PRICING from '../vn/pricing.json';
+import EN_BMI from '../en/bmiCalculator.json';
+import VN_BMI from '../vn/bmiCalculator.json';
+
 
 export const translations = {
     en: "English",
@@ -13,13 +16,15 @@ const resources = {
     en: {
         translation: {
             ...EN_HOME,
-            ...EN_PRICING
+            ...EN_PRICING,
+            ...EN_BMI
         }
     },
     vn: {
         translation: {
             ...VN_HOME,
-            ...VN_PRICING
+            ...VN_PRICING,
+            ...VN_BMI
         }
     }
 };
