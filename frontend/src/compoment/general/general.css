@@ -1,0 +1,25 @@
+.language-switcher {
+    display: flex;
+    justify-content: flex-end; /* Đẩy các nút về phía bên phải */
+    gap: 10px; /* Khoảng cách giữa các nút */
+    margin-right: 20px; /* Khoảng cách từ các nút đến biên phải */
+    align-items: center; /* Canh giữa các nút theo chiều dọc */
+}
+
+.language-switcher button {
+    background-color: #e91515; /* Màu nền của nút */
+    border: 1px solid #ccc; /* Viền nút */
+    border-radius: 5px; /* Bo góc nút */
+    padding: 5px 10px; /* Khoảng cách bên trong nút */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển vào nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng khi thay đổi màu nền */
+}
+
+.language-switcher button:hover {
+    background-color: #e0e0e0; /* Màu nền khi di chuột vào nút */
+}
+
+.language-switcher button:focus {
+    outline: none; /* Xóa viền khi nút được chọn */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Hiệu ứng bóng khi nút được chọn */
+}
