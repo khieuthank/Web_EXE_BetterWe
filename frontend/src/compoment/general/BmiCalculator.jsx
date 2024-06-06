@@ -1,9 +1,11 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const BmiCalculator = () => {
   const [height, setHeight] = useState(0);
   const [weight, setWeight] = useState(0);
   const [bmi, setBmi] = useState(0);
+  const { t, i18n } = useTranslation();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -31,7 +33,7 @@ const BmiCalculator = () => {
             <div class="row">
               <div class="col-xl-12">
                 <div class="hero-cap hero-cap2 pt-70">
-                  <h2>Bmi Calculator</h2>
+                  <h2>{t('BMI CALCULATOR')}</h2>
                 </div>
               </div>
             </div>
@@ -44,32 +46,32 @@ const BmiCalculator = () => {
           <div class="row">
             <div class="col-lg-6">
               <div class="section-title chart-title">
-                <h2>BMI CALCULATOR CHART</h2>
+                <h2>{t('CHART.name')}</h2>
               </div>
               <div class="chart-table">
                 <table>
                   <thead>
                     <tr>
                       <th>Bmi</th>
-                      <th>WEIGHT STATUS</th>
+                      <th>{t('CHART.weigh status')}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td class="point">Below 18.5</td>
-                      <td>Underweight</td>
+                      <td class="point">{t('CHART.Below 18.5')}</td>
+                      <td>{t('CHART.Underweight')}</td>
                     </tr>
                     <tr>
                       <td class="point">18.5 - 24.9</td>
-                      <td>Healthy</td>
+                      <td>{t('CHART.Healthy')}</td>
                     </tr>
                     <tr>
                       <td class="point">25.0 - 29.9</td>
-                      <td>Overweight</td>
+                      <td>{t('CHART.Overweight')}</td>
                     </tr>
                     <tr>
-                      <td class="point">30.0 - and Above</td>
-                      <td>Obesity</td>
+                      <td class="point">{t('CHART.30.0 - and Above')}</td>
+                      <td>{t('CHART.Obesity')}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -77,12 +79,11 @@ const BmiCalculator = () => {
             </div>
             <div class="col-lg-6">
               <div class="section-title chart-calculate-title">
-                <h2>CALCULATE YOUR BMI</h2>
+                <h2>{t('calculate.name')}</h2>
               </div>
               <div class="chart-calculate-form">
                 <p>
-                  Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men
-                  and women.
+                {t('calculate.description')}
                 </p>
                 <form onSubmit={handleSubmit}>
                   <div class="row">
@@ -99,13 +100,13 @@ const BmiCalculator = () => {
                       <input type="text" placeholder="Sex" />
                     </div> */}
                     <div class="col-lg-12">
-                      <button type="submit">Calculate</button>
+                      <button type="submit">{t('button')}</button>
                     </div>
                   </div>
                 </form>
                 {bmi > 0 && (
                   <div>
-                    <p>Your BMI is: {bmi.toFixed(2)}</p>
+                    <p>{t('calculate.total')} {bmi.toFixed(2)}</p>
                     <p>{getAdvice(bmi)}</p>
                   </div>
                 )}

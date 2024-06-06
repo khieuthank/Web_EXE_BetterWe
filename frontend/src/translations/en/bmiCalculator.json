@@ -1,4 +1,5 @@
 {
+    "BMI CALCULATOR": "BMI CALCULATOR",
     "CHART":{
         "name":"BMI CALCULATOR CHART",
         "weigh status":"WEIGHT STATUS",
@@ -10,7 +11,7 @@
         "Obesity":"Obesity"
     },
     "button":"Calculate",
-    "caculate":{
+    "calculate":{
         "name":"CALCULATE YOUR BMI",
         "description":"Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.",
         "total":"Your BMI is:",
