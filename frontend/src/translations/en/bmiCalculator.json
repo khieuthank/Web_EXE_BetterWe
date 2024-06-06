@@ -1,0 +1,9 @@
+{
+    "CHART":{
+        "name":"BMI CALCULATOR CHART",
+        "weigh status":"WEIGHT STATUS",
+        "Below 18.5":"Below 18.5",
+        "30.0 - and Above":"30.0 - and Above"
+
+    }
+}

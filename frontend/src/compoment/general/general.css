@@ -98,3 +98,23 @@
 .mobile-menu-icon i {
   font-size: 18px; 
 }
+
+
+.logo {
+  width: 100px; 
+  height: 100px; 
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.logo-img {
+  width: 100%;
+  height: auto; 
+  display: block; 
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 45px; 
+    height: 45px;
+  }}

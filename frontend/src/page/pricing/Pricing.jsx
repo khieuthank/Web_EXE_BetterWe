@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../compoment/general/Header';
-
+import { useTranslation } from "react-i18next";
 const Pricing = () => {
+    const { t, i18n } = useTranslation();
   return (
     <div>
       <div class="black-bg">
@@ -14,7 +15,7 @@ const Pricing = () => {
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap hero-cap2 pt-70">
-                            <h2>Pricing</h2>
+                            <h2>{t('header.pricing')}</h2>
                         </div>
                     </div>
                 </div>
@@ -28,7 +29,7 @@ const Pricing = () => {
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section-tittle text-center mb-55">
-                        <h2>Pricing</h2>
+                        <h2>{t('header.pricing')}</h2>
                     </div>
                 </div>
             </div>
@@ -40,14 +41,14 @@ const Pricing = () => {
                                 <img src="assets/img/icon/price.svg" alt=""/>
                             </div>
                             <div class="properties__caption">
-                                <span class="month">6 month</span>
-                                <p class="mb-25">$30/m  <span>(Single class)</span></p>
+                                <span class="month">{t('Service.Basic Package')}</span>
+                                <p class="mb-25">{t('Price.Basic')}  <span></span></p>
                                 <div class="single-features">
                                     <div class="features-icon">
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Free riding </p>
+                                        <p>{t('Content.Basic.one')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -55,7 +56,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Unlimited equipments</p>
+                                        <p>{t('Content.Basic.two')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -63,7 +64,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Personal trainer</p>
+                                        <p>{t('Content.Basic.three')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -71,7 +72,54 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Weight losing classes</p>
+                                        <p>{t('Content.Basic.four')}</p>
+                                    </div>
+                                </div>
+                                
+                                <a href="#" class="border-btn border-btn2">Join Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="properties mb-30">
+                        <div class="properties__card">
+                            <div class="about-icon">
+                                <img src="assets/img/icon/price.svg" alt=""/>
+                            </div>
+                            <div class="properties__caption">
+                                <span class="month">{t('Service.Advanced Package')}</span>
+                                <p class="mb-25">{t('Price.Advanced')} <span>(Single class)</span></p>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.one')} </p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.two')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.three')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.four')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features mb-20">
@@ -79,7 +127,15 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Month to mouth</p>
+                                        <p>{t('Content.Advanced.five')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.six')}</p>
                                     </div>
                                 </div>
                                 <a href="#" class="border-btn border-btn2">Join Now</a>
@@ -94,14 +150,14 @@ const Pricing = () => {
                                 <img src="assets/img/icon/price.svg" alt=""/>
                             </div>
                             <div class="properties__caption">
-                                <span class="month">6 month</span>
-                                <p class="mb-25">$30/m  <span>(Single class)</span></p>
+                                <span class="month">{t('Service.Premium Package')}</span>
+                                <p class="mb-25">{t('Price.Premium')}  <span>(Single class)</span></p>
                                 <div class="single-features">
                                     <div class="features-icon">
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Free riding </p>
+                                        <p>{t('Content.Premium.one')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -109,7 +165,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Unlimited equipments</p>
+                                        <p>{t('Content.Premium.two')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -117,7 +173,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Personal trainer</p>
+                                        <p>{t('Content.Premium.three')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features">
@@ -125,7 +181,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Weight losing classes</p>
+                                        <p>{t('Content.Premium.four')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features mb-20">
@@ -133,53 +189,7 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Month to mouth</p>
-                                    </div>
-                                </div>
-                                <a href="#" class="border-btn border-btn2">Join Now</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-6">
-                    <div class="properties mb-30">
-                        <div class="properties__card">
-                            <div class="about-icon">
-                                <img src="assets/img/icon/price.svg" alt=""/>
-                            </div>
-                            <div class="properties__caption">
-                                <span class="month">6 month</span>
-                                <p class="mb-25">$30/m  <span>(Single class)</span></p>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt=""/>
-                                    </div>
-                                    <div class="features-caption">
-                                        <p>Free riding </p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt=""/>
-                                    </div>
-                                    <div class="features-caption">
-                                        <p>Unlimited equipments</p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt=""/>
-                                    </div>
-                                    <div class="features-caption">
-                                        <p>Personal trainer</p>
-                                    </div>
-                                </div>
-                                <div class="single-features">
-                                    <div class="features-icon">
-                                        <img src="assets/img/icon/check.svg" alt=""/>
-                                    </div>
-                                    <div class="features-caption">
-                                        <p>Weight losing classes</p>
+                                        <p>{t('Content.Premium.five')}</p>
                                     </div>
                                 </div>
                                 <div class="single-features mb-20">
@@ -187,7 +197,23 @@ const Pricing = () => {
                                         <img src="assets/img/icon/check.svg" alt=""/>
                                     </div>
                                     <div class="features-caption">
-                                        <p>Month to mouth</p>
+                                        <p>{t('Content.Premium.six')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.seven')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.eight')}</p>
                                     </div>
                                 </div>
                                 <a href="#" class="border-btn border-btn2">Join Now</a>

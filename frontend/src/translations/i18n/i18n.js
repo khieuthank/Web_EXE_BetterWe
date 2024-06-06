@@ -2,25 +2,33 @@ import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
 import EN_HOME from "../en/home.json";
 import VN_HOME from "../vn/home.json";
+import EN_PRICING from '../en/pricing.json';
+import VN_PRICING from '../vn/pricing.json';
 
 export const translations = {
     en: "English",
     vn: "Tiếng Việt"
 };
-
 const resources = {
     en: {
-        translation: EN_HOME
+        translation: {
+            ...EN_HOME,
+            ...EN_PRICING
+        }
     },
     vn: {
-        translation: VN_HOME
+        translation: {
+            ...VN_HOME,
+            ...VN_PRICING
+        }
     }
 };
 
+
 i18n.use(initReactI18next).init({
     resources,
-    lng: 'vn',
-    fallbackLng: 'vn',
+    lng: 'en',
+    fallbackLng: 'en',
     interpolation: {
         escapeValue: false
     }

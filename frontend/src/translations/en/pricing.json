@@ -1,0 +1,38 @@
+{
+    "Service": {
+        "Basic Package": "Basic Package",
+        "Advanced Package": "Advanced Package",
+        "Premium Package": "Premium Package"
+    },
+    "Content": {
+        "Basic": {
+            "one": "Weekly personalization plan.",
+            "two": "Detailed video instructions for each exercise.",
+            "three": "Basic nutrition advice.",
+            "four": "Visit Betterwe's online community to share and receive support from other members."
+        },
+        "Advanced": {
+            "one": "All benefits of the Basic Package",
+            "two": "Personalized daily workout plan",
+            "three": "In-depth nutritional counseling and weekly meal plans",
+            "four": "Direct support from trainers via chat",
+            "five": "Participate in weekly live-streamed workout sessions",
+            "six": "Get 10% off when purchasing BetterWE's workout equipment."
+        },
+        "Premium": {
+            "one": "All benefits of the Advanced Package.",
+            "two": "Personalized daily workout plan including advanced and specialized exercises.",
+            "three": "Personalized nutritional counseling with detailed daily meal plans.",
+            "four": "Direct support from trainers via chat and video calls.",
+            "five": "Participate in weekly live-streamed workout sessions and direct nutritional counseling sessions.",
+            "six": "Get 20% off when purchasing BetterWE's workout equipment.",
+            "seven": "Receive a complimentary basic workout equipment set when signing up for 3 months or more.",
+            "eight": "Access exclusive BetterWE courses on advanced fitness and nutrition."
+        }
+    },
+    "Price":{
+        "Basic": "$8/m",
+        "Advanced": "$12/m",
+        "Premium": "$20/m"
+    }
+}
