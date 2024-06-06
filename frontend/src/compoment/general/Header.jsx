@@ -16,7 +16,7 @@ const Header = () => {
     }
 
     const closeMenu = () => {
-        setIsMenuOpen(false); // Đóng menu khi một mục được chọn
+        setIsMenuOpen(false); 
     }
 
     return (

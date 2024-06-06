@@ -2,11 +2,11 @@
   border: 1px;
   padding: 8px 12px;
   border-radius: 4px;
-  background-color: rgba(221, 34, 34, 0.1); /* Màu đỏ với độ trong suốt 80% */
+  background-color: rgba(221, 34, 34, 0.1);
   color: #ffffff;
   cursor: pointer;
-  font-family: Arial, sans-serif; /* Chọn font-family bạn muốn */
-  font-size: 14px; /* Chọn font-size bạn muốn */
+  font-family: Arial, sans-serif; 
+  font-size: 14px; 
 }
 
 .language-switcher select:focus {
@@ -28,18 +28,18 @@
 }
 
   .mobile_menu {
-    display: none; /* Ban đầu ẩn menu */
+    display: none; 
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff; /* Màu nền */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng */
-    z-index: 999; /* Đảm bảo menu hiển thị phía trên */
+    background-color: #fff; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    z-index: 999; 
 }
 
 .mobile_menu.show {
-    display: block; /* Hiển thị menu khi 'isMenuOpen' là true */
+    display: block; 
 }
 
 .mobile_menu nav ul {
@@ -54,22 +54,22 @@
 .mobile_menu nav ul li a {
     display: block;
     padding: 15px 20px;
-    color: #333; /* Màu chữ */
+    color: #333; 
     text-decoration: none;
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    transition: background-color 0.3s ease; 
 }
 
 .mobile_menu nav ul li a:hover {
-    background-color: #f4f4f4; /* Màu nền khi di chuột qua */
+    background-color: #ec3f3f; 
 }
 
 .mobile_menu .submenu {
-    display: none; /* Ẩn submenu ban đầu */
-    background-color: #fff; /* Màu nền cho submenu */
+    display: none;
+    background-color: #fff; 
 }
 
 .mobile_menu .submenu.show {
-    display: block; /* Hiển thị submenu khi hover */
+    display: block; 
 }
 
 .mobile_menu .submenu li {
@@ -79,12 +79,12 @@
 .mobile_menu .submenu li a {
     padding: 10px 20px;
     display: block;
-    color: #333; /* Màu chữ cho submenu */
-    transition: background-color 0.3s ease; /* Hiệu ứng chuyển đổi màu nền */
+    color: #333;
+    transition: background-color 0.3s ease; 
 }
 
 .mobile_menu .submenu li a:hover {
-    background-color: #f4f4f4; /* Màu nền khi di chuột qua submenu */
+    background-color: #f4f4f4; 
 }
 .mobile-menu-icon {
   cursor: pointer;
@@ -96,5 +96,5 @@
 }
 
 .mobile-menu-icon i {
-  font-size: 18px; /* Điều chỉnh kích thước của biểu tượng */
+  font-size: 18px; 
 }
