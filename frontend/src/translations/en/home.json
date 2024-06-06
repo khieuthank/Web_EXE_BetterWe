@@ -1,0 +1,11 @@
+{
+    "header":{
+        "home": "Home",
+        "about": "About",
+        "contact": "Contact",
+        "BMI calculator": "BMI calculator",
+        "pricing": "Pricing",
+        "blog": "Blog",
+        "blog detail": "Blog detail"
+    }
+}
