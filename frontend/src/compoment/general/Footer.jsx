@@ -1,7 +1,11 @@
 import React from 'react'
 import Messenger from '../plugin/Messenger' 
+import {Link} from 'react-router-dom'
+import { useTranslation } from "react-i18next"
+
 
 const Footer = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div>
     <footer>
@@ -26,12 +30,32 @@ const Footer = () => {
                             <div className="main-menu main-menu2 text-center">
                               <nav>
                                 <ul>
-                                  <li><a href="index.html">Home</a></li>
-                                  <li><a href="about.html">About</a></li>
-                                  <li><a href="courses.html">Courses</a></li>
-                                  <li><a href="pricing.html">Pricing</a></li>
-                                  <li><a href="gallery.html">Gallery</a></li>
-                                  <li><a href="contact.html">Contact</a></li>
+                                <li>
+                                                <Link to="/home" >{t('header.home')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/about" >{t('header.about')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/bmi-calculator" >{t('header.BMI calculator')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/blog" >Blog</Link>
+                                                <ul className="submenu">
+                                                    <li>
+                                                        <Link to="/blog/detail" >Blog Detail</Link>
+                                                    </li>
+                                                    <li>
+                                                        <a href="elements.html" >Elements</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <Link to="/pricing" >{t('header.pricing')}</Link>
+                                            </li>
+                                            <li>
+                                                <Link to="/contact" >{t('header.contact')}</Link>
+                                            </li>
                                 </ul>
                               </nav>
                             </div>
