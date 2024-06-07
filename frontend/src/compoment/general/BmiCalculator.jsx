@@ -33,7 +33,7 @@ const BmiCalculator = () => {
             <div className="row">
               <div className="col-xl-12">
                 <div className="hero-cap hero-cap2 pt-70">
-                  <h2>{t('BMI CALCULATOR')}</h2>
+                  <h2>{t("BMI CALCULATOR")}</h2>
                 </div>
               </div>
             </div>
@@ -46,32 +46,53 @@ const BmiCalculator = () => {
           <div className="row">
             <div className="col-lg-6">
               <div className="section-title chart-title">
-                <h2>{t('CHART.name')}</h2>
+                <h2>{t("CHART.name")}</h2>
               </div>
               <div className="chart-table">
                 <table>
                   <thead>
                     <tr>
                       <th>Bmi</th>
-                      <th>{t('CHART.weigh status')}</th>
+                      <th>{t("CHART.weigh status")}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td className="point">{t('CHART.Below 18.5')}</td>
-                      <td>{t('CHART.Underweight')}</td>
+                      <td className="point">{t("CHART.Below 18.5")}</td>
+                      <td>{t("CHART.Underweight")}</td>
                     </tr>
                     <tr>
                       <td className="point">18.5 - 24.9</td>
-                      <td>{t('CHART.Healthy')}</td>
+                      <td>{t("CHART.Healthy")}</td>
                     </tr>
                     <tr>
                       <td className="point">25.0 - 29.9</td>
-                      <td>{t('CHART.Overweight')}</td>
+                      <td>{t("CHART.Overweight")}</td>
                     </tr>
                     <tr>
-                      <td className="point">{t('CHART.30.0 - and Above')}</td>
-                      <td>{t('CHART.Obesity')}</td>
+                      <td className="point">{t("CHART.30.0 - and Above")}</td>
+                      <td>{t("CHART.Obesity")}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>{t("CHART.weigh status")}</th>
+                      <th>Risk</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>{t("CHART.Underweight")}</td>
+                      <td className="point">{t("CHART.Below 18.5")}</td>
+                    </tr>
+
+                    <tr>
+                      <td>{t("CHART.Overweight")}</td>
+                      <td className="point">
+                        <p></p>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -79,10 +100,10 @@ const BmiCalculator = () => {
             </div>
             <div className="col-lg-6">
               <div className="section-title chart-calculate-title">
-                <h2>{t('calculate.name')}</h2>
+                <h2>{t("calculate.name")}</h2>
               </div>
               <div className="chart-calculate-form">
-                <p>{t('calculate.description')}</p>
+                <p>{t("calculate.description")}</p>
                 <form onSubmit={handleSubmit}>
                   <div className="row">
                     <div className="col-sm-6">
@@ -100,24 +121,26 @@ const BmiCalculator = () => {
                       />
                     </div>
                     <div className="col-lg-12">
-                      <button type="submit">{t('button')}</button>
+                      <button type="submit">{t("button")}</button>
                     </div>
                   </div>
                 </form>
                 {bmi > 0 && (
                   <div>
-                    <p>{t('calculate.total')} {bmi.toFixed(2)}</p>
+                    <p>
+                      {t("calculate.total")} {bmi.toFixed(2)}
+                    </p>
                     <p>
                       {(() => {
                         const advice = getAdvice(bmi);
                         if (advice === "temp1") {
-                          return t('calculate.result.one');
+                          return t("calculate.result.one");
                         } else if (advice === "temp2") {
-                          return t('calculate.result.two');
+                          return t("calculate.result.two");
                         } else if (advice === "temp3") {
-                          return t('calculate.result.three');
+                          return t("calculate.result.three");
                         } else {
-                          return t('calculate.result.four');
+                          return t("calculate.result.four");
                         }
                       })()}
                     </p>
