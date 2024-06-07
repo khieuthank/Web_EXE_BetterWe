@@ -30,7 +30,7 @@
   "button": "Tính toán",
   "calculate": {
     "fivee": "TÍNH TOÁN CHỈ SỐ BMI CỦA BẠN",
-    "description": "Chỉ số khối cơ thể (BMI) là một đo lường về mỡ cơ thể dựa trên chiều cao và cân nặng áp dụng cho five và nữ trưởng thành.",
+    "description": "Chỉ số khối cơ thể (BMI) là một đo lường về mỡ cơ thể dựa trên chiều cao và cân nặng áp dụng cho đàn ông và nữ trưởng thành.",
     "total": "Chỉ số BMI của bạn là:",
     "result": {
       "one": "Bạn đang thiếu cân. Quan trọng là phải ăn uống cân đối và tham khảo ý kiến của bác sĩ để xác định nguyên nhân và giải quyết vấn đề một cách thích hợp.",
