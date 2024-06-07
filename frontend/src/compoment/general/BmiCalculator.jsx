@@ -44,7 +44,7 @@ const BmiCalculator = () => {
       <section className="bmi-calculator-section spad">
         <div className="container">
           <div className="row">
-            <div className="col-lg-6">
+            <div className="col-lg-7">
               <div className="section-title chart-title">
                 <h2>{t("CHART.name")}</h2>
               </div>
@@ -79,26 +79,38 @@ const BmiCalculator = () => {
                   <thead>
                     <tr>
                       <th>{t("CHART.weigh status")}</th>
-                      <th>Risk</th>
+                      <th>{t("CHART.risk")}</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>{t("CHART.Underweight")}</td>
-                      <td className="point">{t("CHART.Below 18.5")}</td>
+                      <td className="point">{t("CHART.Underweight")}</td>
+                      <td>
+                        <p>{t("CHART.UnderweightRisk.one")}</p>
+                        <p>{t("CHART.UnderweightRisk.two")}</p>
+                        <p>{t("CHART.UnderweightRisk.three")}</p>
+                        <p>{t("CHART.UnderweightRisk.four")}</p>
+                        <p>{t("CHART.UnderweightRisk.five")}</p>
+                        <p>{t("CHART.UnderweightRisk.six")}</p>
+                      </td>
                     </tr>
 
                     <tr>
-                      <td>{t("CHART.Overweight")}</td>
-                      <td className="point">
-                        <p></p>
+                      <td className="point">{t("CHART.Overweight")}</td>
+                      <td>
+                        <p>{t("CHART.OverweightRisk.one")}</p>
+                        <p>{t("CHART.OverweightRisk.two")}</p>
+                        <p>{t("CHART.OverweightRisk.three")}</p>
+                        <p>{t("CHART.OverweightRisk.four")}</p>
+                        <p>{t("CHART.OverweightRisk.five")}</p>
+                        <p>{t("CHART.OverweightRisk.six")}</p>
                       </td>
                     </tr>
                   </tbody>
                 </table>
               </div>
             </div>
-            <div className="col-lg-6">
+            <div className="col-lg-5  ">
               <div className="section-title chart-calculate-title">
                 <h2>{t("calculate.name")}</h2>
               </div>

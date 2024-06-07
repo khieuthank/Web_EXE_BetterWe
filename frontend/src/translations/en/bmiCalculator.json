@@ -9,10 +9,22 @@
     "Healthy": "Healthy",
     "Overweight": "Overweight",
     "Obesity": "Obesity",
+    "risk": "Associated Risk",
     "OverweightRisk": {
       "one": "Increased risk of cardiovascular diseases",
-      "two": "increased risk of developing type 2 diabetes",
-      "three": ""
+      "two": "Increased risk of developing type 2 diabetes",
+      "three": "Joint problems, such as osteoarthritis",
+      "four": "Breathing problems, including sleep apnea",
+      "five": "Metabolic syndrome, including high blood pressure",
+      "six": "Increased risk of certain types of cancer"
+    },
+    "UnderweightRisk": {
+      "one": "Malnutrition, vitamin deficiencies",
+      "two": "Weakened immune system",
+      "three": "Osteoporosis and bone fractures",
+      "four": "Fertility issues",
+      "five": "Muscle weakness",
+      "six": "Growth and development issues in children and teenagers"
     }
   },
   "button": "Calculate",
