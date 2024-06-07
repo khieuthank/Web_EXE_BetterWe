@@ -1,7 +1,12 @@
-import React from "react";
-import Header from "../../compoment/general/Header";
-import { Link } from "react-router-dom";
+
+import React from 'react'
+import Header from '../../compoment/general/Header';
+import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 const Home = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
       <div className="black-bg">
@@ -262,12 +267,9 @@ const Home = () => {
             <div className="container">
               <div className="row">
                 <div className="col-xl-12">
-                  <div
-                    className="section-tittle text-center mb-55 wow fadeInUp"
-                    data-wow-duration="2s"
-                    data-wow-delay=".1s"
-                  >
-                    <h2>Pricing</h2>
+
+                  <div className="section-tittle text-center mb-55 wow fadeInUp" data-wow-duration="2s" data-wow-delay=".1s">
+                    <h2>{t('header.pricing')}</h2>
                   </div>
                 </div>
               </div>
@@ -279,24 +281,15 @@ const Home = () => {
                         <img src="assets/img/icon/price.svg" alt="" />
                       </div>
                       <div className="properties__caption">
-                        <span className="month">6 month</span>
-                        <p className="mb-25">
-                          $30/m <span>(Single className)</span>
-                        </p>
+
+                        <span className="month">{t('Service.Basic Package')}</span>
+                        <p className="mb-25">{t('Price.Basic')}   <span></span></p>
                         <div className="single-features">
                           <div className="features-icon">
                             <img src="assets/img/icon/check.svg" alt="" />
                           </div>
                           <div className="features-caption">
-                            <p>Free riding </p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Unlimited equipments</p>
+                            <p>{t('Content.Basic.one')}</p>
                           </div>
                         </div>
                         <div className="single-features">
@@ -304,7 +297,7 @@ const Home = () => {
                             <img src="assets/img/icon/check.svg" alt="" />
                           </div>
                           <div className="features-caption">
-                            <p>Personal trainer</p>
+                            <p>{t('Content.Basic.two')}</p>
                           </div>
                         </div>
                         <div className="single-features">
@@ -312,20 +305,20 @@ const Home = () => {
                             <img src="assets/img/icon/check.svg" alt="" />
                           </div>
                           <div className="features-caption">
-                            <p>Weight losing classNamees</p>
+                            <p>{t('Content.Basic.three')}</p>
                           </div>
                         </div>
-                        <div className="single-features mb-20">
+                        <div className="single-features">
                           <div className="features-icon">
                             <img src="assets/img/icon/check.svg" alt="" />
                           </div>
                           <div className="features-caption">
-                            <p>Month to mouth</p>
+                            <p>{t('Content.Basic.four')}</p>
                           </div>
                         </div>
-                        <a href="#" className="border-btn border-btn2">
-                          Join Now
-                        </a>
+
+                       
+                        <a href="#" className="border-btn border-btn2">Join Now</a>
                       </div>
                     </div>
                   </div>
@@ -337,53 +330,58 @@ const Home = () => {
                         <img src="assets/img/icon/price.svg" alt="" />
                       </div>
                       <div className="properties__caption">
-                        <span className="month">6 month</span>
-                        <p className="mb-25">
-                          $30/m <span>(Single className)</span>
-                        </p>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Free riding </p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Unlimited equipments</p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Personal trainer</p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Weight losing classNamees</p>
-                          </div>
-                        </div>
-                        <div className="single-features mb-20">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Month to mouth</p>
-                          </div>
-                        </div>
-                        <a href="#" className="border-btn border-btn2">
-                          Join Now
-                        </a>
+
+                        <span className="month">{t('Service.Advanced Package')}</span>
+                        <p className="mb-25">{t('Price.Advanced')}  <span></span></p>
+                        <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.one')} </p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.two')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.three')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.four')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.five')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Advanced.six')}</p>
+                                    </div>
+                                </div>
+                        <a href="#" className="border-btn border-btn2">Join Now</a>
                       </div>
                     </div>
                   </div>
@@ -395,53 +393,74 @@ const Home = () => {
                         <img src="assets/img/icon/price.svg" alt="" />
                       </div>
                       <div className="properties__caption">
-                        <span className="month">6 month</span>
-                        <p className="mb-25">
-                          $30/m <span>(Single className)</span>
-                        </p>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Free riding </p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Unlimited equipments</p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Personal trainer</p>
-                          </div>
-                        </div>
-                        <div className="single-features">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Weight losing classNamees</p>
-                          </div>
-                        </div>
-                        <div className="single-features mb-20">
-                          <div className="features-icon">
-                            <img src="assets/img/icon/check.svg" alt="" />
-                          </div>
-                          <div className="features-caption">
-                            <p>Month to mouth</p>
-                          </div>
-                        </div>
-                        <a href="#" className="border-btn border-btn2">
-                          Join Now
-                        </a>
+
+                        <span className="month">{t('Service.Premium Package')}</span>
+                        <p className="mb-25">{t('Price.Premium')} <span></span></p>
+                        <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.one')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.two')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.three')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.four')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.five')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.six')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.seven')}</p>
+                                    </div>
+                                </div>
+                                <div class="single-features mb-20">
+                                    <div class="features-icon">
+                                        <img src="assets/img/icon/check.svg" alt=""/>
+                                    </div>
+                                    <div class="features-caption">
+                                        <p>{t('Content.Premium.eight')}</p>
+                                    </div>
+                                </div>
+                        <a href="#" className="border-btn border-btn2">Join Now</a>
                       </div>
                     </div>
                   </div>
