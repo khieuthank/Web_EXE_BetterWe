@@ -1,0 +1,25 @@
+{
+    "BMI CALCULATOR": "Tính Chỉ Số BMI",
+    "CHART": {
+        "name": "BIỂU ĐỒ TÍNH CHỈ SỐ BMI",
+        "weigh status": "TÌNH TRẠNG CÂN NẶNG",
+        "Below 18.5": "Dưới 18.5",
+        "30.0 - and Above": "30.0 - và cao hơn",
+        "Underweight": "Thiếu cân",
+        "Healthy": "Bình thường",
+        "Overweight": "Thừa cân",
+        "Obesity": "Béo phì"
+    },
+    "button": "Tính toán",
+    "calculate": {
+        "name": "TÍNH TOÁN CHỈ SỐ BMI CỦA BẠN",
+        "description": "Chỉ số khối cơ thể (BMI) là một đo lường về mỡ cơ thể dựa trên chiều cao và cân nặng áp dụng cho nam và nữ trưởng thành.",
+        "total": "Chỉ số BMI của bạn là:",
+        "result": {
+            "one": "Bạn đang thiếu cân. Quan trọng là phải ăn uống cân đối và tham khảo ý kiến của bác sĩ để xác định nguyên nhân và giải quyết vấn đề một cách thích hợp.",
+            "two": "Bạn có cân nặng bình thường. Tiếp tục duy trì chế độ ăn uống cân đối và tập thể dục thường xuyên để duy trì cân nặng của bạn.",
+            "three": "Bạn đang thừa cân. Hãy xem xét việc áp dụng một chế độ ăn uống lành mạnh hơn và tăng cường hoạt động thể chất. Tham khảo ý kiến của bác sĩ cũng có thể giúp bạn tạo ra một kế hoạch.",
+            "four": "Bạn đang bị béo phì. Quan trọng là phải hành động để giảm cân thông qua một chế độ ăn uống lành mạnh và tập thể dục đều đặn. Việc tìm kiếm lời khuyên từ bác sĩ được khuyến khích cao."
+        }
+    }
+}
