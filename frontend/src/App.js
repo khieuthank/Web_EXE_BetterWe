@@ -12,11 +12,13 @@ import BlogDetail from "./page/blog/BlogDetail";
 import Contact from "./page/contact/Contact";
 import BmiCalculator from "./compoment/general/BmiCalculator.jsx";
 import './translations/i18n/i18n.js';
+import ScrollToTop from "./compoment/ScrollToTop/ScrollToTop.js";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <ScrollToTop />
         <Header />
         <Routes>
           <Route path="/home" element={<Home />}></Route>
