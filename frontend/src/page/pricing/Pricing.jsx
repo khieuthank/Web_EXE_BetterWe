@@ -89,7 +89,7 @@ const Pricing = () => {
                             </div>
                             <div class="properties__caption">
                                 <span class="month">{t('Service.Advanced Package')}</span>
-                                <p class="mb-25">{t('Price.Advanced')} <span>(Single class)</span></p>
+                                <p class="mb-25">{t('Price.Advanced')} <span></span></p>
                                 <div class="single-features">
                                     <div class="features-icon">
                                         <img src="assets/img/icon/check.svg" alt=""/>
@@ -151,7 +151,7 @@ const Pricing = () => {
                             </div>
                             <div class="properties__caption">
                                 <span class="month">{t('Service.Premium Package')}</span>
-                                <p class="mb-25">{t('Price.Premium')}  <span>(Single class)</span></p>
+                                <p class="mb-25">{t('Price.Premium')}  <span></span></p>
                                 <div class="single-features">
                                     <div class="features-icon">
                                         <img src="assets/img/icon/check.svg" alt=""/>

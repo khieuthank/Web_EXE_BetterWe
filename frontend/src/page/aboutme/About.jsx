@@ -1,6 +1,8 @@
 import React from 'react'
 import Header from '../../compoment/general/Header';
+import { useTranslation } from "react-i18next";
 const About = () => {
+    const { t, i18n } = useTranslation();
     return (
         <div>
 

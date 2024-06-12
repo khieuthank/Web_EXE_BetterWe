@@ -6,6 +6,14 @@
         "BMI calculator": "BMI calculator",
         "pricing": "Pricing",
         "blog": "Blog",
-        "blog detail": "Blog detail"
+        "blog detail": "Blog detail",
+        "courses": "Courses"
+    },
+    "Single Slider":{
+       "Hi This is BetterWE": "Hi This is BetterWE",
+       "Gym Trainer": "Gym Trainer",
+       "My Courses": "My Courses"
+
     }
+  
 }

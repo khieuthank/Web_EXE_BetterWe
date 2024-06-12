@@ -16,7 +16,7 @@ const Header = () => {
     }
 
     const closeMenu = () => {
-        setIsMenuOpen(false); 
+        setIsMenuOpen(false);
     }
 
     return (
@@ -63,6 +63,9 @@ const Header = () => {
                                             <li>
                                                 <Link to="/contact" onClick={closeMenu}>{t('header.contact')}</Link>
                                             </li>
+                                            <li>
+                                                <Link to="/courses" onClick={closeMenu}>{t('header.courses')}</Link>
+                                            </li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -83,7 +86,7 @@ const Header = () => {
                                         </div>
                                         <div className={`mobile_menu ${isMenuOpen ? 'show' : ''}`}>
                                             <nav>
-                                                <ul id="navigation">
+                                                <ul id="mobile-menu-ul">
                                                     <li>
                                                         <Link to="/home" onClick={closeMenu}>{t('header.home')}</Link>
                                                     </li>

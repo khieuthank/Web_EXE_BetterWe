@@ -31,8 +31,8 @@
         }
     },
     "Price":{
-        "Basic": "$8/m",
-        "Advanced": "$12/m",
-        "Premium": "$20/m"
+        "Basic": "$10/m",
+        "Advanced": "$15/m",
+        "Premium": "$25/m"
     }
 }

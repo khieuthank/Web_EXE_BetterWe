@@ -13,6 +13,7 @@ import Contact from "./page/contact/Contact";
 import BmiCalculator from "./compoment/general/BmiCalculator.jsx";
 import './translations/i18n/i18n.js';
 import ScrollToTop from "./compoment/ScrollToTop/ScrollToTop.js";
+import Courses from "./page/courses/Courses.jsx";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/bmi-calculator" element={<BmiCalculator />}></Route>
           <Route path="/pricing" element={<Pricing />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
+          <Route path ="/courses" element={<Courses />}></Route>
         </Routes>
         <Footer />
       </BrowserRouter>

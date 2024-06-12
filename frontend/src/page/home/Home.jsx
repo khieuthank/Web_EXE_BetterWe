@@ -20,9 +20,9 @@ const Home = () => {
                   <div className="row">
                     <div className="col-xl-9 col-lg-9 col-md-10">
                       <div className="hero__caption">
-                        <span data-animation="fadeInLeft" data-delay="0.1s">Hi This is  Zacson</span>
-                        <h1 data-animation="fadeInLeft" data-delay="0.4s">Gym Trainer</h1>
-                        <a href="courses.html" className="border-btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">My Courses</a>
+                        <span data-animation="fadeInLeft" data-delay="0.1s">{t('Single Slider.Hi This is BetterWE')}</span>
+                        <h1 data-animation="fadeInLeft" data-delay="0.4s">{t('Single Slider.Gym Trainer')}</h1>
+                        <a href="courses" className="border-btn hero-btn" data-animation="fadeInLeft" data-delay="0.8s">{t('Single Slider.My Courses')}</a>
                       </div>
                     </div>
                   </div>
