@@ -1,10 +1,17 @@
 {
     "Service": {
-        "Basic Package": "Gói cơ bản",
-        "Advanced Package": "Gói nâng cao",
-        "Premium Package": "Gói cao cấp"
+        "Free Package": "Gói Miễn phí BetterWE",
+        "Basic Package": "Gói Cơ bản BetterWE",
+        "Advanced Package": "Gói Nâng cao BetterWE",
+        "Premium Package": "Gói Cao cấp BetterWE"
     },
     "Content": {
+        "Free": {
+            "one": "Kế hoạch tập luyện cơ bản: Người dùng sẽ nhận được kế hoạch tập luyện cơ bản phù hợp với hầu hết mọi người, không cá nhân hóa.",
+            "two": "Thư viện video hướng dẫn: Truy cập thư viện video hướng dẫn các bài tập cơ bản để bắt đầu hành trình tập luyện của bạn.",
+            "three": "Bài viết và tài liệu dinh dưỡng: Truy cập các bài viết và tài liệu dinh dưỡng cơ bản để nâng cao hiểu biết về ăn uống lành mạnh.",
+            "four": "Tham gia cộng đồng: Tham gia vào cộng đồng trực tuyến của BetterWE để chia sẻ kinh nghiệm và nhận hỗ trợ từ các thành viên khác."
+        },
         "Basic": {
             "one": "Kế hoạch tập luyện cá nhân hóa hàng tuần.",
             "two": "Hướng dẫn video chi tiết từng bài tập.",
@@ -12,27 +19,28 @@
             "four": "Truy cập vào cộng đồng trực tuyến của BetterWE để chia sẻ và nhận hỗ trợ từ các thành viên khác."
         },
         "Advanced": {
-            "one": "Tất cả các lợi ích của Gói Cơ Bản",
-            "two": "Kế hoạch tập luyện cá nhân hóa hàng ngày",
+            "one": "Tất cả lợi ích của Gói Cơ bản.",
+            "two": "Kế hoạch tập luyện cá nhân hóa hàng ngày.",
             "three": "Tư vấn dinh dưỡng chuyên sâu và thực đơn hàng tuần.",
             "four": "Hỗ trợ trực tiếp từ huấn luyện viên qua chat.",
             "five": "Tham gia các buổi live-stream hướng dẫn tập luyện hàng tuần.",
             "six": "Giảm 10% khi mua các sản phẩm dụng cụ tập luyện của BetterWE."
         },
         "Premium": {
-            "one": "Tất cả các lợi ích của Gói Nâng Cao.",
-            "two": "Kế hoạch tập luyện cá nhân hóa hàng ngày, bao gồm cả các bài tập nâng cao và chuyên biệt.",
+            "one": "Tất cả lợi ích của Gói Nâng cao.",
+            "two": "Kế hoạch tập luyện cá nhân hóa hàng ngày, bao gồm các bài tập nâng cao và chuyên biệt.",
             "three": "Tư vấn dinh dưỡng cá nhân hóa với thực đơn chi tiết hàng ngày.",
             "four": "Hỗ trợ trực tiếp từ huấn luyện viên qua chat và cuộc gọi video.",
-            "five": "Tham gia các buổi live-stream hướng dẫn tập luyện hàng tuần và các buổi tư vấn dinh dưỡng trực tiếp.",
+            "five": "Tham gia các buổi live-stream hướng dẫn tập luyện và tư vấn dinh dưỡng trực tiếp hàng tuần.",
             "six": "Giảm 20% khi mua các sản phẩm dụng cụ tập luyện của BetterWE.",
-            "seven": "Được tặng bộ dụng cụ tập luyện cơ bản khi đăng ký từ 3 tháng trở lên.",
-            "eight": "Truy cập vào các khoá học chuyên sâu về thể hình và dinh dưỡng độc quyền của BetterWE."
+            "seven": "Nhận bộ dụng cụ tập luyện cơ bản miễn phí khi đăng ký từ 3 tháng trở lên.",
+            "eight": "Truy cập các khóa học chuyên sâu về thể hình và dinh dưỡng độc quyền của BetterWE."
         }
     },
-    "Price":{
-        "Basic": "199,000 VNĐ/tháng",
-        "Advanced": "299,000 VNĐ/tháng",
-        "Premium": "499,000 VNĐ/tháng"
+    "Price": {
+        "Free": "Miễn phí",
+        "Basic": "199 VND/tháng",
+        "Advanced": "389 VND/tháng",
+        "Premium": "489 VND/tháng"
     }
 }

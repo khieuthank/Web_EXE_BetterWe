@@ -1,38 +1,46 @@
 {
     "Service": {
-        "Basic Package": "Basic Package",
-        "Advanced Package": "Advanced Package",
-        "Premium Package": "Premium Package"
+        "Free Package": "Free version  BetterWE",
+        "Basic Package": "Basic version BetterWE",
+        "Advanced Package": "Advanced version  BetterWE",
+        "Premium Package": "Premium version  BetterWE- "
     },
     "Content": {
+        "Free" : {
+            "one": "Basic workout plan: Users will receive a generic workout plan suitable for most people, not personalized.",
+            "two": "Library of instructional videos: Access a library of instructional videos for basic exercises to help you start your fitness journey.",
+            "three": "Nutrition articles and resources: Access basic nutrition articles and resources to improve your understanding of healthy eating.",
+            "four": "Join the community: Join BetterWE's online community, where you can share experiences and receive support from other members."
+        },
         "Basic": {
-            "one": "Weekly personalization plan.",
+            "one": "Personalized weekly workout plan.",
             "two": "Detailed video instructions for each exercise.",
-            "three": "Basic nutrition advice.",
-            "four": "Visit Betterwe's online community to share and receive support from other members."
+            "three": "Basic nutritional consultation.",
+            "four": "Access BetterWE's online community to share and receive support from other members."         
         },
         "Advanced": {
-            "one": "All benefits of the Basic Package",
-            "two": "Personalized daily workout plan",
-            "three": "In-depth nutritional counseling and weekly meal plans",
-            "four": "Direct support from trainers via chat",
-            "five": "Participate in weekly live-streamed workout sessions",
-            "six": "Get 10% off when purchasing BetterWE's workout equipment."
+            "one": "All the benefits of the Basic Package.",
+            "two": "Personalized daily workout plan.",
+            "three": "In-depth nutritional consultation and weekly menu.",
+            "four": "Direct support from the coach via chat.",
+            "five": "Participate in weekly live-stream training sessions.",
+            "six": "10% discount when purchasing BetterWE workout equipment products."
         },
         "Premium": {
             "one": "All benefits of the Advanced Package.",
-            "two": "Personalized daily workout plan including advanced and specialized exercises.",
-            "three": "Personalized nutritional counseling with detailed daily meal plans.",
-            "four": "Direct support from trainers via chat and video calls.",
-            "five": "Participate in weekly live-streamed workout sessions and direct nutritional counseling sessions.",
-            "six": "Get 20% off when purchasing BetterWE's workout equipment.",
-            "seven": "Receive a complimentary basic workout equipment set when signing up for 3 months or more.",
-            "eight": "Access exclusive BetterWE courses on advanced fitness and nutrition."
+            "two": "Personalized daily workout plan, including advanced and specialized exercises.",
+            "three": "Personalized nutritional consultation with detailed daily menu.",
+            "four": "Live support from coaches via chat and video calls.",
+            "five": "Participate in weekly live-stream training sessions and live nutrition consultation sessions.",
+            "six": "20% off when purchasing BetterWE workout equipment products.",
+            "seven": "Get a free basic workout kit when registering for 3 months or more.",
+            "eight": "Access BetterWE's exclusive in-depth fitness and nutrition courses."
         }
     },
     "Price":{
-        "Basic": "$10/m",
-        "Advanced": "$15/m",
-        "Premium": "$25/m"
+        "Free": "Free",
+        "Basic": "$9.9/m",
+        "Advanced": "$17.9/m",
+        "Premium": "$22.9VND/m"
     }
 }
